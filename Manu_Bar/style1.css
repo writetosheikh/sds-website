@@ -1,0 +1,103 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: static;
+}
+body{
+    background: white;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
+
+.manubar1{
+    background: darkgreen;
+    text-align: center;
+}
+.manubar1 ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.manubar1 ul li{
+    width: 90px;
+    margin: 15px;
+    padding: 15px;
+}
+.manubar1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active1, .manubar1 ul li:hover{
+    background: red;
+    border-radius: 3px;
+
+}
+.manubar1 .fa
+{
+    margin-right: 8px;
+}
+.submanu1
+{
+display: none;
+}
+.manubar1 ul li:hover .submanu1
+{
+    display: block;
+    position: absolute;
+    background: green;
+    margin-top: 15px;
+    margin-left:-15px;
+}
+.manubar1 ul li:hover .submanu1 ul{
+    display: block;
+    margin: 10px;
+}
+.manubar1 ul li:hover .submanu1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.manubar1 ul li:hover .submanu1 ul li:last-child
+{
+    border-bottom: none;
+}
+.manubar1 ul li:hover .submanu1 ul li a:hover
+{
+    color:orangered;
+}
+.fa fa-angle-right
+{
+    float: right;
+}
+.submanu2
+{
+    display: none;
+}
+.hoverme:hover .submanu2
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: green;
+}
+.name h1{
+
+    text-align: center;
+    color: red;
+    padding: 15px;
+    font-size: 70px;
+    box-shadow:black;
+    font-family: "Arial Rounded MT Bold";
+}
+
